@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import PrincipalPage from "../components/PrincipalPage";
-import Header from "../components/Header";
 
 export default function Home() {
   const [exercices, setExercices] = useState([]);
@@ -15,7 +14,6 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
       <PrincipalPage exercices={exercices} />
     </div>
   );

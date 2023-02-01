@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 export default function Exercices({ title, content }) {
   return (
     <div className="DisplayExercices">
-      <ul>
-        <li>{title}</li>
-        <li>Description : {content}</li>
-      </ul>
+      <div>
+        <h2>{title}</h2>
+        <p>Description : {content}</p>
+      </div>
     </div>
   );
 }

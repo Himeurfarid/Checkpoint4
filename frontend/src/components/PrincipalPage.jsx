@@ -5,6 +5,7 @@ import Exercices from "./Exercices";
 export default function PrincipalPage({ exercices }) {
   return (
     <div>
+      <h1>Les exercices au poids du corps</h1>
       {exercices.map((exercice) => {
         return (
           <Exercices

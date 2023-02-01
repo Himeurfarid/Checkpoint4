@@ -1,36 +1,22 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import { useEffect, useState } from "react";
+import PrincipalPage from "../components/PrincipalPage";
+import Header from "../components/Header";
 
 export default function Home() {
+  const [exercices, setExercices] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      `${import.meta.env.VITE_BACKEND_URL ?? "http://localhost:5000"}/exercices`
+    )
+      .then((response) => response.json())
+      .then((data) => setExercices(data));
+  }, []);
+
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <div>
+      <Header />
+      <PrincipalPage exercices={exercices} />
+    </div>
   );
 }

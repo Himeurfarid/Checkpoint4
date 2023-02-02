@@ -12,9 +12,5 @@ export default function Home() {
       .then((data) => setExercices(data));
   }, []);
 
-  return (
-    <div>
-      <PrincipalPage exercices={exercices} />
-    </div>
-  );
+  return <PrincipalPage exercices={exercices} />;
 }

@@ -1,21 +1,44 @@
 .header-app {
   display: flex;
   justify-content: space-between;
-  margin: 0.4rem 0rem 0.4rem 0rem;
   padding: 0rem 0.4rem 0.4rem 0.4rem;
   border: solid rgba(128, 128, 128, 0.263);
   border-width: 0rem 0rem 0.1rem 0rem;
   align-items: center;
+  background-color: rgb(227, 70, 70);
 }
 .menu-header {
   max-width: 2rem;
   max-height: 2rem;
-  background-color: white;
+  background-color: rgb(227, 70, 70);
+}
+.menu-item {
+  font-size: 30px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.889);
 }
 .logo-header {
   max-width: 2rem;
   max-height: 1.5rem;
   background-color: white;
+  background-color: rgb(227, 70, 70);
+}
+.button {
+  background-color: white;
+  border: none;
+  background-color: rgb(227, 70, 70);
+}
+#hidden {
+  background-color: white;
+  border: none;
+  background-color: rgb(227, 70, 70);
+}
+#nothidden {
+  background-color: rgb(227, 70, 70);
+  border: none;
+  text-align: start;
+  margin-top: -12px;
 }
 .isHidden {
   display: none;
@@ -24,7 +47,7 @@
   display: initial;
   display: flex;
   flex-direction: column;
-  background: rgb(115, 117, 118);
+  background: rgb(227, 70, 70);
   position: fixed;
   top: 0;
   right: 0;
@@ -39,7 +62,7 @@
     display: initial;
     display: flex;
     flex-direction: column;
-    background: rgb(115, 117, 118);
+    background: rgb(227, 70, 70);
     position: fixed;
     top: 0;
     right: 0;

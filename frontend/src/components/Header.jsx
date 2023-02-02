@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import hamburger from "../assets/hamburger.png";
+import fleche from "../assets/fleche.png";
 import logo from "../assets/logo.png";
 import "./Header.css";
 
@@ -29,12 +30,12 @@ export default function Header() {
       </button>
       <nav className={isHidden ? "notHidden" : "isHidden"}>
         <button
-          id="hidden"
+          id="nothidden"
           type="button"
           onClick={handleClickHidden}
           label="hamburger"
         >
-          <img className="menu-header" src={hamburger} alt="menu" />
+          <img className="menu-header" src={fleche} alt="menu" />
         </button>
         <a id="home" className="menu-item" href="/">
           Home

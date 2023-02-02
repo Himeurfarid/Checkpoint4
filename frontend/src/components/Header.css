@@ -57,18 +57,24 @@
   transition: all 1s ease;
 }
 
-@media only screen and (min-width: 1060px) {
+@media only screen and (min-width: 700px) {
   .notHidden {
     display: initial;
     display: flex;
     flex-direction: column;
     background: rgb(227, 70, 70);
     position: fixed;
-    top: 0;
+    top: 55px;
     right: 0;
     width: 20%;
     height: 100%;
     padding: 20px 0;
     transition: all 1s ease;
+  }
+  .menu-item:hover {
+    font-size: 30px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.333);
   }
 }

@@ -17,3 +17,19 @@
   max-height: 1.5rem;
   background-color: white;
 }
+.isHidden {
+  display: none;
+}
+.notHidden {
+  display: initial;
+  display: flex;
+  flex-direction: column;
+  background: rgb(115, 117, 118);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 1s ease;
+}

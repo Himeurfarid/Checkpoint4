@@ -29,7 +29,7 @@ export default function Header() {
       </button>
       <nav className={isHidden ? "notHidden" : "isHidden"}>
         <button
-          id="hidden"
+          id="nothidden"
           type="button"
           onClick={handleClickHidden}
           label="hamburger"
